@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Myprofile">
+
+   <ImageView
+       android:layout_width="120dp"
+       android:layout_height="120dp"
+       android:id="@+id/profile"
+       android:src="@drawable/lili"
+       android:layout_centerHorizontal="true"
+       android:layout_margin="50dp"
+       />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mariam A. El-Sheikh"
+        android:layout_below="@+id/profile"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="-50dp"/>
+
+
+ <LinearLayout
+     android:id="@+id/linear"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:layout_below="@+id/name"
+     android:layout_marginTop="50dp">
+
+     <TextView
+         android:id="@+id/accounts"
+         android:text="Accounts"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="30dp"
+         android:textStyle="italic"
+         android:layout_marginTop="10dp"
+         android:textColor="@color/black"
+         android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+         android:drawablePadding="15dp"/>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="privacy , security , change data"
+         android:textSize="17dp"
+         android:textColor="#0000a0"
+         android:layout_margin="5dp"/>
+
+ </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear">
+
+        <TextView
+            android:id="@+id/chats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chats"
+            android:textSize="30dp"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_baseline_message_24"
+            android:drawablePadding="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Theme , Wallpaper , Chat history"
+            android:textColor="#0000a0"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Storage and Data"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_baseline_donut_large_24"
+            android:drawablePadding="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Network usage"
+            android:textSize="17dp"
+            android:textColor="#0000a0"
+            android:layout_margin="15dp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Help"
+            android:textStyle="italic"
+            android:textSize="25dp"
+            android:drawableLeft="@drawable/ic_baseline_help_24"
+            android:drawablePadding="15dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help center , Privacy policy"
+            android:textSize="17dp"
+            android:textColor="#0000a0"
+            android:layout_margin="15dp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
